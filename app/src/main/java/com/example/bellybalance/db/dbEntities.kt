@@ -1,4 +1,4 @@
-package com.example.bellybalance.views
+package com.example.bellybalance.db
 
 import androidx.room.Entity
 import androidx.room.ForeignKey
@@ -24,7 +24,9 @@ data class User(
         parentColumns = ["id"],
         childColumns = ["userId"],
         onDelete = ForeignKey.CASCADE // specify onDelete behavior
-    )]
+    )],
+    indices = [Index("userId")]
+
 )
 data class HealthData(
     @PrimaryKey(autoGenerate = true)

@@ -1,4 +1,4 @@
-package com.example.bellybalance.views
+package com.example.bellybalance.views.screens
 
 import android.content.Context
 import android.content.Intent
@@ -36,6 +36,12 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.foundation.layout.*
+import com.example.bellybalance.views.screens.ClassesAndFunctions.AdsBar
+import com.example.bellybalance.views.screens.ClassesAndFunctions.BodyText
+import com.example.bellybalance.views.screens.ClassesAndFunctions.ButtonBottomSection
+import com.example.bellybalance.views.screens.ClassesAndFunctions.HeaderText
+import com.example.bellybalance.views.screens.ClassesAndFunctions.MainpageActivity
+import com.example.bellybalance.views.screens.ClassesAndFunctions.TopSection
 
 // Function for the main screen for showing ConditionsScreen.
 // The functions TopSections, ButtonBottomSection and AdsBar is imported from the "GeneralFunctions.kt" file.

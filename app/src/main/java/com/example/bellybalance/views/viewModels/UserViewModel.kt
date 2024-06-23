@@ -1,8 +1,10 @@
-package com.example.bellybalance.views
+package com.example.bellybalance.views.viewModels
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.bellybalance.views.MainApplication
+import com.example.bellybalance.db.User
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

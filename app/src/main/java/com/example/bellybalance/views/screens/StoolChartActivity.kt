@@ -1,4 +1,4 @@
-package com.example.bellybalance.views
+package com.example.bellybalance.views.screens
 
 import android.content.Context
 import android.content.Intent
@@ -21,6 +21,11 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.bellybalance.R
+import com.example.bellybalance.views.screens.ClassesAndFunctions.AdsBar
+import com.example.bellybalance.views.screens.ClassesAndFunctions.ButtonBottomSection
+import com.example.bellybalance.views.screens.ClassesAndFunctions.HeaderText
+import com.example.bellybalance.views.screens.ClassesAndFunctions.PoopActivity
+import com.example.bellybalance.views.screens.ClassesAndFunctions.TopSection
 
 // Function for the main screen for StoolChartScreen.
 // The functions TopSections, ButtonBottomSection and AdsBar is imported from the "GeneralFunctions.kt" file.

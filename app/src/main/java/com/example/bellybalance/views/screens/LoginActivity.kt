@@ -1,4 +1,4 @@
-package com.example.bellybalance.views
+package com.example.bellybalance.views.screens
 
 import android.content.Intent
 import androidx.compose.foundation.background
@@ -28,9 +28,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.bellybalance.views.screens.ClassesAndFunctions.MainpageActivity
+import com.example.bellybalance.views.screens.ClassesAndFunctions.SignupActivity
+import com.example.bellybalance.views.viewModels.UserViewModel
 
 // Function for the main screen for showing LoginScreen.
 @Composable

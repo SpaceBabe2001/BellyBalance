@@ -1,4 +1,4 @@
-package com.example.bellybalance
+package com.example.bellybalance.views.screens
 
 import android.content.Intent
 import androidx.compose.foundation.background
@@ -19,7 +19,6 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -29,17 +28,15 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.bellybalance.views.AdsBar
-import com.example.bellybalance.views.ButtonBottomSection
-import com.example.bellybalance.views.HeaderText
-import com.example.bellybalance.views.LoginActivity
-import com.example.bellybalance.views.MainpageActivity
-import com.example.bellybalance.views.TopSectionWithoutButtons
-import com.example.bellybalance.views.UpgradeLoggedOutActivity
-import com.example.bellybalance.views.UserViewModel
+import com.example.bellybalance.views.screens.ClassesAndFunctions.AdsBar
+import com.example.bellybalance.views.screens.ClassesAndFunctions.ButtonBottomSection
+import com.example.bellybalance.views.screens.ClassesAndFunctions.HeaderText
+import com.example.bellybalance.views.screens.ClassesAndFunctions.LoginActivity
+import com.example.bellybalance.views.screens.ClassesAndFunctions.TopSectionWithoutButtons
+import com.example.bellybalance.views.screens.ClassesAndFunctions.UpgradeLoggedOutActivity
+import com.example.bellybalance.views.viewModels.UserViewModel
 
 @Composable
 fun SignUpActivity(viewModel: UserViewModel) {

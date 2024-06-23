@@ -1,4 +1,4 @@
-package com.example.bellybalance.views
+package com.example.bellybalance.views.screens
 
 import android.content.Intent
 import androidx.compose.foundation.Image
@@ -14,6 +14,11 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.bellybalance.R
 import com.example.bellybalance.ui.theme.BellyBalanceTheme
+import com.example.bellybalance.views.screens.ClassesAndFunctions.AdsBar
+import com.example.bellybalance.views.screens.ClassesAndFunctions.BodyText
+import com.example.bellybalance.views.screens.ClassesAndFunctions.ButtonBottomSection
+import com.example.bellybalance.views.screens.ClassesAndFunctions.HeaderText
+import com.example.bellybalance.views.screens.ClassesAndFunctions.LoginActivity
 
 // Function for the main screen for showing WelcomeScreen.
 // The functions ButtonBottomSection and AdsBar is imported from the "GeneralFunctions.kt" file.

@@ -1,4 +1,4 @@
-package com.example.bellybalance.views
+package com.example.bellybalance.views.screens
 
 import android.content.Context
 import android.content.Intent
@@ -7,10 +7,8 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -18,13 +16,16 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
-import androidx.compose.foundation.shape.RoundedCornerShape
+import com.example.bellybalance.views.screens.ClassesAndFunctions.AdsBar
+import com.example.bellybalance.views.screens.ClassesAndFunctions.ButtonBottomSection
+import com.example.bellybalance.views.screens.ClassesAndFunctions.HeaderText
+import com.example.bellybalance.views.screens.ClassesAndFunctions.SignupActivity
+import com.example.bellybalance.views.screens.ClassesAndFunctions.TopSectionWithoutButtons
 
-// Function for the main screen for showing UpgradeLoggedInScreen.
-// The functions TopSections, ButtonBottomSection and AdsBar is imported from the "GeneralFunctions.kt" file.
+// Function for the main screen for showing UpgradeLoggedOutScreen.
+// The functions TopSections, Backbutton and AdsBar is imported from the "GeneralFunctions.kt" file.
 @Composable
-fun UpgradeLoggedInScreen() {
+fun UpgradeLoggedOutScreen() {
     val context = LocalContext.current
 
     Column(
@@ -32,19 +33,19 @@ fun UpgradeLoggedInScreen() {
             .fillMaxSize()
             .background(Color.White)
     ) {
-        TopSection(context)
+        TopSectionWithoutButtons(context)
         Box(
             modifier = Modifier.weight(1f)
         ) {
-            UpgradeLoggedInMiddleSection(context = context, modifier = Modifier.align(Alignment.TopCenter))
+            UpgradeLoggedOutMiddleSection(context = context, modifier = Modifier.align(Alignment.TopCenter))
         }
         ButtonBottomSection(
-            buttonLabel = "Tilbage til forsiden",
+            buttonLabel = "Tilbage til opret bruger",
             buttonColor = Color.White,
             textColor = Color(0xFF8DA078),
             borderColor = Color(0xFF8DA078),
             onClick = {
-                val intent = Intent(context, MainpageActivity::class.java)
+                val intent = Intent(context, SignupActivity::class.java)
                 context.startActivity(intent)
             }
         )
@@ -52,14 +53,14 @@ fun UpgradeLoggedInScreen() {
     }
 }
 
-// Function for the middle section of the UpgradeLoggedInScreen.
+// Function for the middle section of the UpgradeLoggedOutScreen.
+// The function Upgradeboxes is imported from the file "UpgradeLoggedInActivity"
 @Composable
-fun UpgradeLoggedInMiddleSection(context: Context, modifier: Modifier = Modifier) {
+fun UpgradeLoggedOutMiddleSection(context: Context, modifier: Modifier = Modifier) {
     Column(
         modifier = modifier
             .fillMaxSize()
             .padding(horizontal = 15.dp)
-
     ) {
         HeaderText(headerText = "Opgrader")
         Spacer(modifier = Modifier.height(20.dp))
@@ -70,30 +71,10 @@ fun UpgradeLoggedInMiddleSection(context: Context, modifier: Modifier = Modifier
         Upgradeboxes(items = listOf("Pro version"), backgroundColor = Color(0xFF606B54))
     }
 }
-@Composable
-fun Upgradeboxes(items: List<String>, backgroundColor: Color) {
-    Box(
-        modifier = Modifier
-            .fillMaxWidth()
-            .background(backgroundColor, shape = RoundedCornerShape(8.dp))
-            .height(150.dp)
-    ) {
-        items.forEach { item ->
-            Text(
-                text = "$item\n",
-                color = Color.White,
-                fontSize = 25.sp,
-                modifier = Modifier
-                    .padding(bottom = 50.dp)
-                    .align(Alignment.Center)
-            )
-        }
-    }
-}
 
-// Function for displaying the UpgradeLoggedInScreen composable in the Android Studio preview.
+// Function for displaying the UpgradeLoggedOutScreen composable in the Android Studio preview.
 @Preview
 @Composable
-fun UpgradeLoggedInPreview() {
-    UpgradeLoggedInScreen()
+fun UpgradeLoggedOutPreview() {
+    UpgradeLoggedOutScreen()
 }

@@ -1,4 +1,4 @@
-package com.example.bellybalance.views
+package com.example.bellybalance.views.screens
 
 //Inspiration for datepicker-code: https://github.com/Kiran-Bahalaskar/Date-Picker-With-Jetpack-Compose/blob/master/app/src/main/java/com/kiranbahalaskar/datepicker/MainActivity.kt
 
@@ -34,6 +34,12 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.bellybalance.views.screens.ClassesAndFunctions.AdsBar
+import com.example.bellybalance.views.screens.ClassesAndFunctions.AnalyseActivity
+import com.example.bellybalance.views.screens.ClassesAndFunctions.BodyText
+import com.example.bellybalance.views.screens.ClassesAndFunctions.ButtonBottomSection
+import com.example.bellybalance.views.screens.ClassesAndFunctions.HeaderText
+import com.example.bellybalance.views.screens.ClassesAndFunctions.TopSection
 import java.util.Calendar
 import java.util.Date
 

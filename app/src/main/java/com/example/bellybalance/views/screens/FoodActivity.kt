@@ -1,4 +1,4 @@
-package com.example.bellybalance.views
+package com.example.bellybalance.views.screens
 
 import android.content.Intent
 import androidx.compose.foundation.background
@@ -24,6 +24,13 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.runtime.Composable
+import com.example.bellybalance.views.screens.ClassesAndFunctions.AdsBar
+import com.example.bellybalance.views.screens.ClassesAndFunctions.BodyText
+import com.example.bellybalance.views.screens.ClassesAndFunctions.ButtonBottomSection
+import com.example.bellybalance.views.screens.ClassesAndFunctions.HeaderText
+import com.example.bellybalance.views.screens.ClassesAndFunctions.MainpageActivity
+import com.example.bellybalance.views.screens.ClassesAndFunctions.TimeInputSection
+import com.example.bellybalance.views.screens.ClassesAndFunctions.TopSection
 
 // Function for the main screen for showing FoodScreen.
 // The functions TopSections, ButtonBottomSection and AdsBar is imported from the "GeneralFunctions.kt" file.

@@ -1,4 +1,4 @@
-package com.example.bellybalance.views
+package com.example.bellybalance.views.screens
 
 import android.content.Context
 import android.content.Intent
@@ -31,6 +31,13 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.runtime.*
+import com.example.bellybalance.views.screens.ClassesAndFunctions.AdsBar
+import com.example.bellybalance.views.screens.ClassesAndFunctions.ButtonBottomSection
+import com.example.bellybalance.views.screens.ClassesAndFunctions.HeaderText
+import com.example.bellybalance.views.screens.ClassesAndFunctions.MainActivity
+import com.example.bellybalance.views.screens.ClassesAndFunctions.MainpageActivity
+import com.example.bellybalance.views.screens.ClassesAndFunctions.TopSection
+import com.example.bellybalance.views.screens.ClassesAndFunctions.UpgradeLoggedinActivity
 
 // Function for the main screen for showing SettingsScreen.
 // The functions TopSections, ButtonBottomSection and AdsBar is imported from the "GenerelFunctions.kt" file.

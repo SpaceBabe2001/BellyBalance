@@ -1,4 +1,4 @@
-package com.example.bellybalance.views
+package com.example.bellybalance.views.screens
 
 import android.content.Context
 import android.content.Intent
@@ -13,9 +13,19 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.bellybalance.views.screens.ClassesAndFunctions.AdsBar
+import com.example.bellybalance.views.screens.ClassesAndFunctions.BodyText
+import com.example.bellybalance.views.screens.ClassesAndFunctions.ButtonBottomSection
+import com.example.bellybalance.views.screens.ClassesAndFunctions.CalenderActivity
+import com.example.bellybalance.views.screens.ClassesAndFunctions.ConditionActivity
+import com.example.bellybalance.views.screens.ClassesAndFunctions.FoodActivity
+import com.example.bellybalance.views.screens.ClassesAndFunctions.HeaderText
+import com.example.bellybalance.views.screens.ClassesAndFunctions.PoopActivity
+import com.example.bellybalance.views.screens.ClassesAndFunctions.TopSection
+import com.example.bellybalance.views.screens.ClassesAndFunctions.UpgradeLoggedinActivity
+import com.example.bellybalance.views.viewModels.UserViewModel
 
 // Function for the main screen for showing ReportsScreen.
 // The functions TopSections, ButtonBottomSection and AdsBar is imported from the "GenerelFunctions.kt" file.
@@ -56,7 +66,7 @@ fun ReportsScreen(viewModel: UserViewModel) {
 
 // Function for the middle section of the ReportsScreen.
 @Composable
-fun ReportsMiddleSection(context: Context,viewModel:UserViewModel, modifier: Modifier = Modifier) {
+fun ReportsMiddleSection(context: Context, viewModel: UserViewModel, modifier: Modifier = Modifier) {
     Box(
         modifier = Modifier
             .fillMaxSize()

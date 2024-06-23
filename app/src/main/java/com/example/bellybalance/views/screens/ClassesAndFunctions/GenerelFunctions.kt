@@ -1,4 +1,4 @@
-package com.example.bellybalance.views
+package com.example.bellybalance.views.screens.ClassesAndFunctions
 
 import android.content.Context
 import android.content.Intent

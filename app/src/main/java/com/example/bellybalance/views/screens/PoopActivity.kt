@@ -1,4 +1,4 @@
-package com.example.bellybalance.views
+package com.example.bellybalance.views.screens
 
 import android.content.Context
 import android.content.Intent
@@ -17,6 +17,8 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Info
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Text
@@ -32,6 +34,14 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.runtime.*
 import com.example.bellybalance.R
+import com.example.bellybalance.views.screens.ClassesAndFunctions.AdsBar
+import com.example.bellybalance.views.screens.ClassesAndFunctions.BodyText
+import com.example.bellybalance.views.screens.ClassesAndFunctions.ButtonBottomSection
+import com.example.bellybalance.views.screens.ClassesAndFunctions.HeaderText
+import com.example.bellybalance.views.screens.ClassesAndFunctions.MainpageActivity
+import com.example.bellybalance.views.screens.ClassesAndFunctions.StoolChartActivity
+import com.example.bellybalance.views.screens.ClassesAndFunctions.TimeInputSection
+import com.example.bellybalance.views.screens.ClassesAndFunctions.TopSection
 
 // Function for the main screen for showing PoopScreen.
 // The functions TopSections, ButtonBottomSection og AdsBar is imported from the "GeneralFunctions.kt" file.
@@ -158,7 +168,7 @@ fun InfoSection() {
             colors = ButtonDefaults.buttonColors(containerColor = Color.White),
             modifier = Modifier.size(100.dp)        ) {
             Image(
-                painter = painterResource(R.drawable.poopicon),
+                imageVector = Icons.Default.Info,
                 contentDescription = "Skema",
                 modifier = Modifier
                     .fillMaxSize()

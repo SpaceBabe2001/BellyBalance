@@ -1,4 +1,4 @@
-package com.example.bellybalance.views
+package com.example.bellybalance.views.screens.ClassesAndFunctions
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -8,9 +8,21 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.bellybalance.SignUpActivity
+import com.example.bellybalance.views.screens.SignUpActivity
 import com.example.bellybalance.ui.theme.BellyBalanceTheme
+import com.example.bellybalance.views.viewModels.UserViewModel
+import com.example.bellybalance.views.screens.AnalysisScreen
+import com.example.bellybalance.views.screens.CalenderScreen
+import com.example.bellybalance.views.screens.ConditionsScreen
+import com.example.bellybalance.views.screens.FoodScreen
+import com.example.bellybalance.views.screens.LoginScreen
+import com.example.bellybalance.views.screens.PoopScreen
+import com.example.bellybalance.views.screens.ReportsScreen
+import com.example.bellybalance.views.screens.SettingsScreen
+import com.example.bellybalance.views.screens.StoolChartScreen
+import com.example.bellybalance.views.screens.UpgradeLoggedInScreen
+import com.example.bellybalance.views.screens.UpgradeLoggedOutScreen
+import com.example.bellybalance.views.screens.WelcomeScreen
 
 // Class for WelcomeScreen
 class MainActivity : ComponentActivity() {
